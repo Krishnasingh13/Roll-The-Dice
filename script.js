@@ -33,7 +33,7 @@ function countingTimer() {
     setInterval(function () {
         if (timer > 0) {
             timer--;
-            time.textContent = `The will be Changed in ${timer} seconds`;
+            time.textContent = `The dice will be Changed in ${timer} seconds`;
             console.log('timer' + timer);
         } else {
             timer = 4;
