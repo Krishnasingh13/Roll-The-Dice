@@ -6,6 +6,8 @@ var scoretxt = document.querySelector('#score');
 var txt = document.querySelector('#txt');
 var time = document.querySelector('#time');
 var img = document.querySelector('#dice img');
+var select = document.querySelector('#select');
+
 
 var timer = 4;
 var score = 0;
@@ -18,6 +20,7 @@ setInterval(function () {
 
 btn.addEventListener('click', function (dets) {
     var btnVal = Number(dets.target.value);
+    select.textContent = btnVal;
     if (random === btnVal) {
         score += 10;
         scoretxt.textContent = score;
